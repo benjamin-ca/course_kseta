@@ -2,8 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from src.Fitter import Fitter
 
-data = np.loadtxt("data.csv")
-
+data = np.loadtxt("data.csv", delimiter=",")
 plt.plot(
     np.arange(20),
     np.poly1d(Fitter(data[:, 0], data[:, 1]).fit())(np.arange(20)),
