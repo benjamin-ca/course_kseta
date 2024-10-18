@@ -22,4 +22,5 @@ jobs:
             else
               echo "BLASPHEMPY DETECTED"
               exit 1
+            fi
                    
