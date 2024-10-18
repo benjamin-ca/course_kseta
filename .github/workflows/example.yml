@@ -14,7 +14,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install numpy matplotlib
       - name: Run Code
-        run: python main.py
+        run: python main.py > output.txt
       - name: Check output
         run: |
             if grep -q "Fortran bad" output.txt; then
