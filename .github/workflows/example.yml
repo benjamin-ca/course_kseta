@@ -16,7 +16,7 @@ jobs:
       - name: Run Code
         run: python main.py
       - name: Check output
-          run: |
+        run: |
             if grep -q "Fortran bad" output.txt; then
               echo "NO BLASPHEMY"
             else
